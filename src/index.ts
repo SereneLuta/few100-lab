@@ -76,7 +76,7 @@ function updateTipValues() {
     const totalAmt = tip + parseFloat(billInput.value);
     tipAmount.innerText = tip.toFixed(2).toString();
     total.innerText = totalAmt.toFixed(2).toString();
-
+    // implement isNaN() to get rid of NaN in output
 }
 
 function savePreferredTip() {
