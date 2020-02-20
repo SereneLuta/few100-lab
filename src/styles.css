@@ -1,3 +1,44 @@
 h1 {
-    color:red;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin-top: 5%;
+    margin-left: 10%;
 }
+
+#bill-input {
+    width: 75%;
+    margin-left: 10%;
+}
+
+#button-group {
+    margin-left: 10%;
+}
+
+#default-tip[type="button"] :default{
+    background: #dddddd;
+}
+
+#tip-msg {
+    margin-left:10%;
+}
+
+button[type="button"] :disabled{
+    background: #dddddd;
+}
+table {
+    width: 75%;
+}
+
+table, th, td {
+    margin-left: 10%;
+    border: 1px solid #dddddd;
+  }
+
+  td {
+      padding: 15px;
+  }
+
+  .error {
+    border: 5px solid red !important;
+  }

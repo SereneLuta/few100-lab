@@ -3,16 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Front End Web 100</title>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+        <h1>Tip Calculator</h1>
+        <div class="input-group mb-3"
+             id="bill-input">
+            <div class="input-group-prepend">
+                <span class="input-group-text"
+                      id="dollarSign">$</span>
+            </div>
+            <input type="number"
+                   class="form-control"
+                   id="total-bill">
+        </div>
+        <div class="btn-group"
+             id="button-group"
+             role="group"
+             aria-label="Basic example">
+            <button type="button"
+                    data-percent="0.10"
+                    id="ten-percent"
+                    class="btn btn-secondary btn-group">10%</button>
+            <button type="button"
+                    data-percent="0.15"
+                    id="fifteen-percent"
+                    class="btn btn-secondary btn-group">15%</button>
+            <button type="button"
+                    data-percent="0.20"
+                    id="twenty-percent"
+                    class="btn btn-secondary btn-group"
+                    disabled>20%</button>
+        </div>
+        <p id="tip-msg">You are tipping <span id="tip-msg-percent">20%</span></p>
+        <table>
+            <tr></tr>
+            <td>Bill Amount: $<span id="bill-output">0</span></td>
+            <tr></tr>
+            <td>Tip Percentage: <span id="tip-percent">20%</span></td>
+            <tr></tr>
+            <td>Amount of tip: $<span id="tip-amt">0</span></td>
+            <tr></tr>
+            <td><i>Total to be Paid: $<span id="total">0</span></i></td>
+        </table>
     </header>
     <main>
-        
+
     </main>
 </body>
 
